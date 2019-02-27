@@ -32,7 +32,7 @@ public interface LinearList {
      * @param index 线性变元素下标
      * @return <p>返回对应的下标元素</p>
      */
-    Object get(int index);
+    Object get(int index) throws Exception;
 
     /**
      * <p>在线性表中的某个位置插入元素</p>
@@ -40,14 +40,14 @@ public interface LinearList {
      * @param index 插入位置
      * @param b     插入的元素
      */
-    void insert(int index, Object b);
+    void insert(int index, Object b) throws Exception;
 
     /**
      * <p>删除指定位置的元素</p>
      *
      * @param index 元素下标
      */
-    void remove(int index);
+    void remove(int index) throws Exception;
 
     /**
      * <p>输出表中的内容</p>
